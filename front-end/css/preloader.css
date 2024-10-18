@@ -1,0 +1,28 @@
+.preloader {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 300px;
+  width: 100%;
+  background-color: var(--white-color);
+}
+
+.preloader svg {
+	stroke-dasharray: 269.7405090332031px;
+	stroke-dashoffset: 0;
+	animation: heartBeat 1.1s linear reverse infinite;
+	transform: rotate(10deg);
+}
+
+@keyframes heartBeat {
+	0% {
+		transform:rotate(0deg)
+	}
+	100% {
+		transform:rotate(360deg)
+	}
+}

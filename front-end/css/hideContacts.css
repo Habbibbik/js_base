@@ -1,0 +1,25 @@
+.more-contacts .contacts__link:not(:nth-child(-n+4)) {
+  display: none;
+}
+
+.more-contacts.show .contacts__link:not(:nth-child(-n+4)) {
+  display: inline;
+}
+
+.more__button.hidden {
+  display: none;
+}
+
+.more__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 11px;
+  border-radius: 100px;
+  border: 1px solid var(--heliotrope-color);
+  color: var(--mine-shaft-color);
+}

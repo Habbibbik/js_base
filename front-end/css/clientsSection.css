@@ -1,0 +1,171 @@
+.clients {
+  padding-top: 130px;
+}
+
+.clients__heading {
+  margin-bottom: 26px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: var(--mine-shaft-color);
+}
+
+.clients__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.display-info {
+  padding-left: 21px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* .display-info__wrapper {
+  display: flex;
+  align-items: center;
+} */
+
+.display-info__item {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--silver-chalice-color);
+}
+
+.display-info__item--id,
+.display-info__sorting {
+  text-transform: uppercase;
+  color: var(--heliotrope-color);
+}
+
+.display-info__item--id,
+.display-info__item--name,
+.display-info__item--create,
+.display-info__item--change {
+    cursor: pointer;
+    user-select: none;
+}
+
+.display-info__item--id {
+  padding-right: 13px;
+  margin-right: 60px;
+  background-position: right center;
+}
+
+.display-info__item--name {
+  padding-left: 48px;
+  background-position: right 18px center;
+}
+
+.display-info__sorting {
+  padding-left: 11px;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.display-info__item--create {
+  position: relative;
+  padding-right: 70px;
+  padding-left: 200px;
+}
+
+.display-info__item--create::before {
+  content: 'создания';
+  position: absolute;
+  right: 0;
+  top: 1px;
+  margin-right: 13px;
+}
+
+.display-info__item--change {
+  position: relative;
+  padding-right: 80px;
+  margin-right: 28px;
+  padding-left: 30px;
+}
+
+.display-info__item--change::before {
+  content: 'изменения';
+  position: absolute;
+  right: 0;
+  top: 1px;
+  margin-right: 13px;
+}
+
+.display-info__item--contacts {
+  padding-left: 30px;
+}
+
+.display-info__item--actions {
+  padding-left: 100px;
+}
+
+.clients__btn {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 12px 26px;
+  align-self: center;
+  font-weight: 600;
+  font-size: 14px;
+  transition: color .3s ease-in-out, background-color .3s ease-in-out;
+  border: 1px solid var(--heliotrope-color);
+  color: var(--heliotrope-color);
+}
+
+.clients__btn svg {
+  display: block;
+  margin-right: 10px;
+}
+
+.clients__btn svg path {
+  transition: fill .3s ease-in-out;
+  fill: var(--heliotrope-color);
+}
+
+.clients__btn:hover svg path {
+  fill: var(--white-color);
+}
+
+.clients__btn:hover {
+  transition: color .3s ease-in-out, background-color .3s ease-in-out;
+  background-color: var(--heliotrope-color);
+  color: var(--white-color);
+}
+
+.create__span,
+.change__span {
+  display: inline-block;
+  width: 7px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-image: url('../img/arrow-down.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.sort-up,
+.sort-down {
+  background-repeat: no-repeat;
+}
+
+.sort-up {
+  background-image: url('../img/arrow-up.svg');
+}
+
+.sort-down {
+  background-image: url('../img/arrow-down.svg');
+}
+
+.display-info__item--change,
+.display-info__item--create {
+  background-image: none;
+}
+
+.clients__wrapper {
+  position: relative;
+  overflow: auto;
+}
